@@ -3,11 +3,11 @@ import { ShimmerContentBlock, ShimmerThumbnail } from "react-shimmer-effects";
 
 const Shimmer = () => {
   return (
-    <div className="flex pt-28  py-3 bg-[#2C333F] justify-center gap-8 flex-wrap items-center">
+    <div className="flex pt-28  py-3  justify-center gap-8 flex-wrap items-center">
       {Array(10)
         .fill()
         .map((_, i) => (
-          <div className="flex w-[26rem] xxl:w-[24rem]  rounded-lg overflow-hidden">
+          <div className="flex custom-shadow w-[26rem] xxl:w-[24rem]  rounded-lg overflow-hidden border-2">
             <ShimmerContentBlock
               title
               text

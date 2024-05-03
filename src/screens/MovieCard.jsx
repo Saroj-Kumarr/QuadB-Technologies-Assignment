@@ -15,6 +15,7 @@ const MovieCard = ({
   status,
   country,
 }) => {
+
   if (!image) return;
 
   return (
@@ -23,18 +24,18 @@ const MovieCard = ({
         <img
           src={image?.original}
           alt="movie"
-          className="object-cover rounded-l-md w-full h-full"
+          className="object-cover custom-shadow rounded-md w-full h-full"
         />
       </div>
 
       <div className="relative w-6/12 flex flex-col gap-1">
-        <h3 className="text-xl font-bold tracking-wider ">{name}</h3>
+        <h3 className="text-xl font-bold tracking-wider text-cyan-700 ">{name}</h3>
         <p>Language : {language}</p>
         <ul className="flex gap-1 flex-wrap items-center ">
           <li>Genres : </li>
           {genres.map((genre) => (
             <li
-              className="bg-gray-300 rounded-sm px-1 py-[1px] text-xs"
+              className="bg-gray-200 rounded-sm px-1 py-[1px] text-xs"
               key={genre}
             >
               {genre}
@@ -49,20 +50,20 @@ const MovieCard = ({
         <span>Country : {country ? country : "Unavailable"}</span>
 
         <div
-          className="flex gap-1 absolute bg-black text-white px-1  
-              rounded-tr-md 
-        items-center right-0 top-0"
+          className="flex gap-1 absolute custom-shadow text-cyan-700 px-1 py-1  
+              rounded-md 
+        items-center right-0 top-0 custom-shadow "
         >
-          <IoMdStar className="text-[#E2B616] text-xl" />
+          <IoMdStar className=" text-xl" />
           {rating.average ? (
-            <span className="text-sm">{rating.average}</span>
+            <span className="text-sm font-bold">{rating.average}</span>
           ) : (
             <span className="text-xs">Unavailable</span>
           )}
         </div>
 
         <Link to={"/summary/" + id}>
-          <button className="bg-black absolute bottom-1 right-1 text-[#E2B616] rounded-md w-full">
+          <button className="custom-shadow absolute bottom-1 right-1 text-cyan-700 font-bold rounded-md w-full py-1">
             Shows
           </button>
         </Link>

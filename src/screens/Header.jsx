@@ -6,18 +6,20 @@ import { BsLinkedin } from "react-icons/bs";
 import { FaSquarePhone } from "react-icons/fa6";
 import { IoHome } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { BiSolidCameraMovie } from "react-icons/bi";
 
 const Header = () => {
   return (
-    <div className="flex px-5 z-10 fixed w-full bg-white  justify-between  items-center custom-shadow">
+    <div className="flex px-5 z-10 fixed w-full bg-white  justify-between  items-center custom-shadow py-5 text-[#155e75]">
       <Link to="/">
-        <div className="flex items-center sm:py-4">
-          <img src={logo} alt="logo" className="h-20 sm:hidden" />
-          <h3 className="font-bold text-2xl tracking-wide ">
-            QuadB Technologies
-          </h3>
+        <div className="flex items-center gap-2">
+          <BiSolidCameraMovie className="text-3xl" />
+          <h3 className="flex font-bold text-2xl tracking-wide">MovieHub</h3>
         </div>
       </Link>
+
+    
+
       <div>
         <ul className="flex items-center text-sm tracking-wide font-semibold  justify-center gap-5 sm:hidden md:hidden">
           <li className="flex items-center gap-1">
