@@ -7,7 +7,7 @@ const Shimmer = () => {
       {Array(10)
         .fill()
         .map((_, i) => (
-          <div className="flex w-[26rem]  rounded-lg overflow-hidden">
+          <div className="flex w-[26rem] xxl:w-[24rem]  rounded-lg overflow-hidden">
             <ShimmerContentBlock
               title
               text
