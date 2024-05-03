@@ -50,8 +50,18 @@ To run this project locally, follow these steps:
 
 ### Laptop
 
-![alt text](src/assets/logo.png)
+![alt text](src/assets/01.png)
+
+![alt text](src/assets/02.png)
+
+![alt text](src/assets/03.png)
+
+![alt text](src/assets/04.png)
 
 ### Tablet
 
+![alt text](src/assets/05.png)
+
 #### Mobile
+
+![alt text](src/assets/06.png)

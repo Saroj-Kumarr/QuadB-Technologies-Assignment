@@ -23,7 +23,7 @@ const Home = () => {
     fetchMovies();
   }, []);
 
-  if (movies) return <Shimmer />;
+  if (!movies) return <Shimmer />;
 
   return (
     <div className="flex  pt-24  py-3  justify-center gap-8 flex-wrap items-center ">
